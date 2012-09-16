@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}<title>Students overview
+</title>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/removestudent.js"></script>
+<script type="text/javascript">
+  var delurl = '{% url remove_group_or_student %}';
+</script>
+{% endblock %}
+
+{% block body %}
+<h2>Просмотр студентов группы</h2>
+<table class="st_overview" border="1">
+  <tr>
+    <th>Фио</th>
+	<th>№ Студентского</th>
+	<th>Дата рождение</th>
+	<th>Action</th>
+  </tr>
+  {% for student in students_by_group %}
+    <tr class="student_table_row">
+	  <td>{{ student.fio }}</td>
+	  <td>{{ student.stud_ticket }}</td>
+	  <td>{{ student.birth_date }}</td>
+	  <td>{% if user.is_staff %}<input type="submit" value="Remove" onclick="removeStudent(this, {{ student.pk }}); return false;"/>/<input type="submit" value="Edit" onclick="document.location='{% url edit_stud %}?stid={{ student.pk }}'"/>{% else %}<i>You have no permission for any actions.</i>{% endif %}</td>                           
+	</tr>
+  {% endfor %}
+</table>
+<div class="clr"></div>
+<button type="submit" onclick="document.location='{% url add_student %}'">Add student</button>
+{% endblock %}

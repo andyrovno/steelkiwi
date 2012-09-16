@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block head %}<title>Edit group
+</title>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+{{ form.media }}
+{% endblock %}
+
+{% block body %}
+<h2>Изменить данные о группе</h2>
+<form id="edit_form" enctype="multipart/form-data" action="{% url edit_group %}?grid={{ grid }}" method="POST">
+  {% csrf_token %}
+  <div class="fields">
+  <div class="fieldWrapper" id="idnamegr">
+    {{ form.namegr.label_tag }} {{ form.namegr }}
+	{{ form.namegr.errors }}
+  </div>
+  <div class="fieldWrapper" id="idstarosta">
+    {{form.starosta.label_tag}}{{ form.starosta }}
+	{{ form.starosta.errors }}
+  </div>
+  <div class="clr"></div>
+  </div>
+  <div id="error_message">Fill the form and press Submit button</div>
+  <button id="savebutton" type="submit">Submit</button>
+</form>
+{% endblock %}

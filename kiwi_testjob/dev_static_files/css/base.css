@@ -1,0 +1,39 @@
+table, td, th {
+border:1px solid green;
+}
+th
+{
+background-color:lightgreen;
+color:white;
+}
+td
+{
+text-align:center;
+}
+table {
+width:50%;
+}
+.fieldWrapper{
+padding:5px;
+}
+
+#idfio, #idbirth_date, #idstud_ticket, #idgroup, #idnamegr, #idstarosta {
+float:right;
+clear:both;
+padding-right:100px;
+width:60%;
+}
+
+#id_fio, #id_birth_date, #id_stud_ticket, #id_group, #id_namegr, #id_starosta{
+float:right;
+}
+
+.fields{
+padding:5px;
+width:50%;
+border:2px green solid;
+}
+
+.clr {
+clear:both;
+}

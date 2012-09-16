@@ -1,0 +1,114 @@
+[
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2012-09-15T11:11:39.223",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$UM60FzM3ZMZ4$+6sElVVvKQe1gCnnZB8E4MQfObR5R4L6TJM7G3FbGk4=",
+            "email": "admin@gmail.com",
+            "date_joined": "2012-09-15T11:10:58.788"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1984-02-15",
+            "stud_ticket": "1234567890",
+            "group": 1,
+            "fio": "\u0421\u043f\u0438\u0440\u0441 \u0411\u0440\u0438\u0442\u043d\u0438"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1985-01-07",
+            "stud_ticket": "1234567891",
+            "group": 1,
+            "fio": "\u0410\u0433\u0438\u043b\u0435\u0440\u0430 \u041a\u0440\u0438\u0441\u0442\u0438\u043d\u0430"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1985-03-25",
+            "stud_ticket": "1234567892",
+            "group": 1,
+            "fio": "\u0420\u0438\u0430\u043d\u0430 \u0420.\u0420."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1959-09-25",
+            "stud_ticket": "1234567893",
+            "group": 2,
+            "fio": "\u0411\u043e\u0431\u0443\u043b \u0418\u0432\u043e"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1961-01-01",
+            "stud_ticket": "1234567894",
+            "group": 2,
+            "fio": "\u041f\u043e\u0432\u0430\u043b\u0438\u0439 \u0422\u0430\u0438\u0441\u0438\u044f"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1956-09-15",
+            "stud_ticket": "1234567895",
+            "group": 2,
+            "fio": "\u041a\u0438\u0440\u043a\u043e\u0440\u043e\u0432 \u0424\u0438\u043b\u043b\u0438\u043f"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "kiwi_students.students",
+        "fields": {
+            "birth_date": "1970-02-15",
+            "stud_ticket": "1234567896",
+            "group": 3,
+            "fio": "\u0424\u0440\u0454\u0434 \u0414\u0430\u0440\u0441\u0442"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "kiwi_students.groups",
+        "fields": {
+            "namegr": "\u0413\u0420-1",
+            "starosta": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "kiwi_students.groups",
+        "fields": {
+            "namegr": "\u0413\u0420-2",
+            "starosta": 4
+        }
+    },
+    {
+        "pk": 3,
+        "model": "kiwi_students.groups",
+        "fields": {
+            "namegr": "\u0413\u0420-3",
+            "starosta": 7
+        }
+    }
+]
